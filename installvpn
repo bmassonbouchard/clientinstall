@@ -3,5 +3,7 @@
 sudo apt-get install openvpn
 sudo apt-get install mosquitto-clients
 
+sudo openvpn /openvpn/client
+
 sudo mosquitto_sub -h 205.237.245.38 -t "callback" -u cimeq -P qwerty --daemon
 sudo mosquitto_pub -h 205.237.245.38 -t "test" -m "Salut Monde!" -u cimeq -P qwerty --daemon
